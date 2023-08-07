@@ -1,0 +1,702 @@
+
+
+body {
+    background-color: #FAFAFA;
+}
+
+
+#sombra{
+    position: fixed;
+    top: 0;
+    right: 110vW;
+    background-color: rgba(0,0,0,0.65);
+
+    width: 130vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+h2 {
+    font-family: var(--font1);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.botao {
+    font-family: var(--font1);
+    color: var(--branco);
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 30%;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+main ul li {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 10px 0;
+    font-family: var(--font2);
+}
+
+li::marker {
+    color: var(--azul);
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-color: var(--azulP);
+}
+
+.header_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.menu_barras {
+    display: none;
+    z-index: 1;
+}
+
+.menu_barras>img {
+    width: 50px;
+}
+
+.barras{
+    /* border-top: 5px solid var(--branco); */
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: .5s;
+}
+
+.barras::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    position: absolute;
+    top: 12px;
+    transition: .5s;
+}
+
+.barras::before{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: var(--branco);
+    position: absolute;
+    top: -12px;
+    transition: .5s;
+}
+
+.ativo .barras{
+    /* background-color: transparent; */
+    transform: rotate(135deg);
+}
+
+.ativo .barras::after{
+    transform: rotate(-270deg);
+    top: 0;
+}
+
+.ativo .barras::before{
+    /* transform: rotate(90deg); */
+    top: 0;
+}
+
+.header_logo {
+    width: 50%;
+    max-width: 220px;
+}
+
+header nav {
+    max-width: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header nav>div {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+header nav a {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font2);
+}
+
+.header_botao_login {
+    border: 4px solid var(--rosa);
+    padding: 4px 30px;
+    border-radius: 30%;
+    font-family: var(--font1);
+}
+
+.header_icone_login{
+    display: none;
+}
+
+
+
+
+
+/* BANNER */
+.banner {
+    background-image: url("../img/banner-background.png");
+    height: calc(100vh - 80px);
+    min-height: 680px;
+    background-size: cover;
+    color: var(--branco);
+    font-family: var(--font2);
+    display: flex;
+    align-items: center;
+}
+
+.banner_conteudo {
+    max-width: 700px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+    background: linear-gradient(114.61deg, rgba(255, 255, 255, 0.052) 1.08%, rgba(255, 255, 255, 0.117) 99.26%);
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 100px;
+}
+
+.banner_slogan_l1 {
+    font-size: 3.625em;
+    font-family: var(--font1);
+}
+
+.banner_slogan_l2 {
+    font-size: 1.5em;
+    max-width: 550px;
+    margin: 50px 0;
+}
+
+.banner_slogan_l3 {
+    font-size: 1.375em;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.banner_botoes {
+    margin-top: 50px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_botao_dev {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 30px;
+    border: 4px solid var(--rosa);
+}
+
+.banner_botao_cli {
+    padding: 14px 73px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(92.23deg, #FF398F -25.96%, #17BBFF 126.83%);
+}
+
+
+
+
+
+/* PARA CLIENTES */
+.span_cliente {
+    background-color: var(--azul);
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+    border: 1px solid #FFFFFF;
+    box-shadow: 25px 25px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+}
+
+.span_cliente p {
+    font-family: var(--font2);
+}
+
+.para_clientes {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 0 100px 0;
+}
+
+.clientes_conteudo {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.para_devs img,
+.clientes_conteudo img {
+    max-width: 550px;
+    width: 50%;
+    object-fit: contain;
+}
+
+.clientes_texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: var(--font2);
+}
+
+.clientes_botao_cli {
+    padding: 14px 50px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(92.23deg, #FF398F -25.96%, #17BBFF 126.83%);
+}
+
+
+
+
+
+/* CONEXAO */
+.conexao {
+    height: 300px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+        url("../img/maos_connect.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/* PARA DEVS */
+.para_devs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 100px 0;
+}
+
+.devs_texto {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 100px 0;
+    font-family: var(--font2);
+}
+
+main ul{
+    margin: 50px 0 50px 25px;
+}
+
+.clientes_botao_devs {
+    padding: 10px 50px;
+    background: linear-gradient(272.99deg, rgba(9, 0, 114, 0.65) 0%, rgba(7, 12, 71, 0.7) 100%);
+    border: 4px solid var(--rosa);
+}
+
+
+
+
+
+/* SERVICOS */
+.servicos {
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos h2 {
+    margin-bottom: 100px;
+}
+
+.servicos_cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-style: italic;
+    width: 48%;
+    max-width: 430px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 80px 5% 50px 5%;
+    color: var(--branco);
+    background-color: var(--azulC);
+    box-shadow: 0px 10px 15px #000000;
+    text-align: center;
+}
+
+.card img {
+    position: absolute;
+    top: -30px;
+    width: 120px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.servicos a {
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: var(--font2);
+    color: var(--azulC);
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-image: 
+        linear-gradient( #06082170, #06082170),
+        url("../img/background_footer.png");
+    background-size: cover;
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.span_dicas {
+    width: 100%;
+    max-width: 860px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid #FFFFFF;
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(7.5px);
+    border-radius: 60px;
+    top: -35px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.span_dicas img {
+    position: absolute;
+    top: -100px;
+    left: 70px;
+    width: 40%;
+    max-width: 300px;
+    /* width: 300px; */
+}
+
+.span_dicas_texto {
+    width: 52%;
+    font-family: var(--font2);
+    font-size: 24px;
+    padding-right: 40px;
+}
+
+.span_dicas_texto p {
+    margin-bottom: 30px;
+}
+
+.botao_dicas {
+    padding: 10px 50px;
+    color: var(--azul);
+    background-color: var(--branco);
+}
+
+.rodape>p {
+    font-family: var(--font2);
+    margin-bottom: 10px;
+}
+
+.rodape_conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.rodape_conteudo h2 {
+    font-size: 24px;
+}
+
+.rodape_conteudo>img {
+    width: 40%;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.rodape_conteudo_paginas ul {
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+.rodape_conteudo_contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rodape_conteudo_contatos img {
+    width: 45px;
+    margin: 10px;
+}
+
+.rodape_conteudo_contatos>a {
+    font-family: var(--font2);
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+
+
+
+
+/* MEDIAS */
+@media screen and (max-width: 1366px) {
+    .conexao {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* HEADER */
+    .menu_barras {
+        display: initial;
+    }
+
+    .header_logo{
+        /* margin-left: 55px; */
+    }
+
+    .menu_links {
+        /* display: none; */
+        position: absolute;
+        left: -300px;
+        overflow-x: hidden;
+        top: 70px;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+        width: auto;
+        z-index: 1;
+        border-radius: 10%;
+        padding: 10px;
+
+        -moz-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .menu_links * {
+        margin: 10px 100px 10px 10px;
+    }
+
+    header nav {
+        /* justify-content: flex-end; */
+        width: auto;
+    }
+
+    .header_botao_login{
+        display: none;
+    }
+
+    .header_icone_login {
+        display: flex;
+    }
+
+    header nav svg {
+        width: 35px;
+        fill: var(--branco);
+    }
+
+    /* BANNER */
+    .banner_conteudo{
+        font-size: 14px;
+        max-width: 500px;
+    }
+
+    .banner_slogan_l2{
+        margin: 30px;
+    }
+
+    .banner_botoes{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .banner_botoes a{
+        align-self: center;
+    }
+
+
+    .span_dicas img,
+    .para_devs img,
+    .clientes_conteudo img{
+        display: none;
+    }
+
+    .clientes_texto,
+    .devs_texto{
+        text-align: center;
+    }
+
+    .para_devs{
+        padding: 0;
+    }
+
+    main ul {
+        text-align: initial;
+    }
+
+    /* SERVICOS */
+    .servicos_cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card2{
+        margin-top: 100px;
+    }
+
+    /* FOOTER */
+    .span_dicas_texto{
+        width: 90%;
+        text-align: center;
+    }
+
+    .rodape_conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape_conteudo_contatos{
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .rodape_conteudo>img{
+        order: -1;
+    }
+
+    .rodape_conteudo_paginas{
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .banner_conteudo {
+        font-size: 13px;
+    }
+    
+    .span_cliente{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    main ul {
+        margin: 40px 0;
+    }
+
+    main ul li {
+        font-size: 17px;
+    }
+
+    .botao {
+        font-size: 16px;
+    }
+    
+    .clientes_botao_cli{
+        padding: 12px 40px;   
+    }
+    
+    .clientes_botao_devs{
+        padding: 9px 40px;   
+    }
+
+    .span_dicas_texto {
+        font-size: 18px;
+    }
+
+
+}
