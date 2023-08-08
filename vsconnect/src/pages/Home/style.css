@@ -184,7 +184,7 @@ header nav a {
 
 /* BANNER */
 .banner {
-    background-image: url("../img/banner-background.png");
+    background-image: url("../../assets/images/banner-background.png");
     height: calc(100vh - 80px);
     min-height: 680px;
     background-size: cover;
@@ -316,7 +316,7 @@ header nav a {
     height: 300px;
     background-image:
         linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
-        url("../img/maos_connect.png");
+        url("../../assets/images/maos_connect.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -418,7 +418,7 @@ main ul{
 footer {
     background-image: 
         linear-gradient( #06082170, #06082170),
-        url("../img/background_footer.png");
+        url("../../assets/images/background_footer.png");
     background-size: cover;
     color: var(--branco);
 }
