@@ -1,0 +1,129 @@
+/* FOOTER */
+footer {
+    background-image: 
+        linear-gradient( #06082170, #06082170),
+        url("../../assets/images/background_footer.png");
+    background-size: cover;
+    color: var(--branco);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.span_dicas {
+    width: 100%;
+    max-width: 860px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.01);
+    border: 1px solid #FFFFFF;
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(7.5px);
+    border-radius: 60px;
+    top: -35px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.span_dicas img {
+    position: absolute;
+    top: -100px;
+    left: 70px;
+    width: 40%;
+    max-width: 300px;
+    /* width: 300px; */
+}
+
+.span_dicas_texto {
+    width: 52%;
+    font-family: var(--font2);
+    font-size: 24px;
+    padding-right: 40px;
+}
+
+.span_dicas_texto p {
+    margin-bottom: 30px;
+}
+
+.botao_dicas {
+    padding: 10px 50px;
+    color: var(--azul);
+    background-color: var(--branco);
+}
+
+.rodape>p {
+    font-family: var(--font2);
+    margin-bottom: 10px;
+}
+
+.rodape_conteudo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.rodape_conteudo h2 {
+    font-size: 24px;
+}
+
+.rodape_conteudo>img {
+    width: 40%;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.rodape_conteudo_paginas ul {
+    font-family: var(--font2);
+    font-size: 18px;
+}
+
+.rodape_conteudo_contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.rodape_conteudo_contatos img {
+    width: 45px;
+    margin: 10px;
+}
+
+.rodape_conteudo_contatos>a {
+    font-family: var(--font2);
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+@media screen and (max-width: 768px) {
+    /* FOOTER */
+    .span_dicas_texto{
+        width: 90%;
+        text-align: center;
+    }
+
+    .rodape_conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape_conteudo_contatos{
+        align-items: center;
+        margin: 50px 0;
+    }
+
+    .rodape_conteudo>img{
+        order: -1;
+    }
+
+    .rodape_conteudo_paginas{
+        order: 1;
+    }
+}
