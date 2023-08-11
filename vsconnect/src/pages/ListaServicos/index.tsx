@@ -2,8 +2,8 @@ import "./style.css";
 
 function ListaServicos() {
     return (
-        <div>
-            <main>
+        <>
+            <main id="main_listaservicos">
                 <div className="container container_lista_servicos">
                     <div className="lista_servicos_conteudo">
                         <h1>Lista de Serviços</h1>
@@ -63,7 +63,7 @@ function ListaServicos() {
                 </div>
             </main>
 
-        </div>
+        </>
     );
 }
 
