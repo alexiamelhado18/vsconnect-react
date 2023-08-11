@@ -8,6 +8,9 @@ import iconLinkedin from "../../assets/images/linkedin.svg";
 //estilização
 import "./style.css";
 
+//rotas
+import { Link } from "react-router-dom";
+
 function Footer() {
     return (
         //codigo do footer
@@ -25,22 +28,37 @@ function Footer() {
                     <div className="rodape_conteudo_paginas">
                         <h2>Páginas</h2>
                         <ul>
-                            <li>Login</li>
-                            <li>Home</li>
-                            <li>Listar Serviços</li>
-                            <li>Cadastrar Cliente</li>
-                            <li>Cadastrar Desenvolvedor</li>
+                            <li>
+                                <Link to={""}>Login</Link>
+                            </li>
+                            <li>
+                                <Link to={""}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to={""}>Listar Serviços</Link>
+                            </li>
+                            <li>
+                                <Link to={""}>Cadastrar Cliente</Link>
+                            </li>
+                            <li>
+                                <Link to={""}>Cadastrar Desenvolvedor</Link>
+                            </li>
                         </ul>
                     </div>
                     <img src={imgLogo} alt="" />
                     <div className="rodape_conteudo_contatos">
                         <h2>Contatos</h2>
                         <div>
-                            <a href="#"><img src={iconFace} alt="" /></a>
-                            <a href="#"><img src={iconInsta} alt="" /></a>
-                            <a href="#"><img src={iconLinkedin} alt="" /></a>
+                            <Link to={"#"}><img src={iconFace} alt="" /></Link>
+
+                            <Link to={"#"}><img src={iconInsta} alt="" /></Link>
+
+                            <Link to={"#"}>
+                                <img src={iconLinkedin} alt="" />
+                            </Link>
+
                         </div>
-                        <a href="mailto:">contato@vsconnect.com</a>
+                        <Link to={"mailto:"}>contato@vsconnect.com</Link>
                     </div>
                 </div>
                 <p>todos os direitos reservados ©.</p>
