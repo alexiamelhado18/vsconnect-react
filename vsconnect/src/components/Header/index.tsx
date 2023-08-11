@@ -43,7 +43,7 @@ function Header() {
                     <nav>
                         <div id="menu_links" className="menu_links">
                             <Link to="/">home</Link>
-                            <Link to="#">serviços</Link>
+                            <Link to="lista/servicos">serviços</Link>
                             <Link to="#">cadastro</Link>
                         </div>
                         <Link className="header_icone_login" to="/">
