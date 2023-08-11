@@ -9,11 +9,18 @@ import Footer from "./components/Footer"
 //estilização global
 import "./index.css";
 
+//rotas
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Home />
-    <Footer/>
-
-    {/* <ListaServicos /> */}
-  </React.StrictMode>,
+    <BrowserRouter> {/*Indica que aplicação terá rotas*/}
+      {/*HEADER*/}
+      <Routes>{/*Indica uma lista de rotas*/}
+        <Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
+        <Route path='lista/servicos' element={<ListaServicos/>}/> 
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  </React.StrictMode>
 )
