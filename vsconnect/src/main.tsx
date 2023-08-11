@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home/";
 import ListaServicos from "./pages/ListaServicos/";
 import Footer from "./components/Footer"
+import Header from './components/Header';
 
 //estilização global
 import "./index.css";
@@ -15,10 +16,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter> {/*Indica que aplicação terá rotas*/}
-      {/*HEADER*/}
+      <Header />
       <Routes>{/*Indica uma lista de rotas*/}
         <Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
-        <Route path='lista/servicos' element={<ListaServicos/>}/> 
+        <Route path='lista/servicos' element={<ListaServicos />} />
       </Routes>
       <Footer />
     </BrowserRouter>
