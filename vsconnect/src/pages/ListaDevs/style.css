@@ -36,13 +36,13 @@
     color: var(--branco);
 }
 
-h1 {
+#main_listadevs h1 {
     font-family: var(--font1);
     font-size: 50px;
     text-align: center;
 }
 
-hr {
+#main_listadevs hr {
     margin: 20px auto;
     width: 80%;
     height: 4px;
