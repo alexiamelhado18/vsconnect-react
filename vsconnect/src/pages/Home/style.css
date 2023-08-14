@@ -1,22 +1,5 @@
-
-
 body {
     background-color: #FAFAFA;
-}
-
-
-#sombra{
-    position: fixed;
-    top: 0;
-    right: 110vW;
-    background-color: rgba(0,0,0,0.65);
-
-    width: 130vw;
-    height: 100vh;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-    backdrop-filter: blur(10px);
 }
 
 .container {
@@ -25,20 +8,20 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+#main_home h1 {
     position: absolute;
     left: -999em;
     width: 1em;
     overflow: hidden;
 }
 
-h2 {
+#main_home h2 {
     font-family: var(--font1);
     font-size: 30px;
     text-transform: uppercase;
 }
 
-h3 {
+#main_home h3 {
     font-size: 28px;
 }
 
@@ -57,6 +40,11 @@ h3 {
     font-size: 22px;
     margin: 10px 0;
     font-family: var(--font2);
+}
+
+#main_home ul li a {
+    text-decoration: none;
+    color: initial;
 }
 
 li::marker {
@@ -225,7 +213,7 @@ li::marker {
     font-family: var(--font2);
 }
 
-#main_home ul{
+#main_home ul {
     margin: 50px 0 50px 25px;
 }
 
@@ -304,40 +292,40 @@ li::marker {
 }
 
 @media screen and (max-width: 768px) {
-    
+
 
     /* BANNER */
-    .banner_conteudo{
+    .banner_conteudo {
         font-size: 14px;
         max-width: 500px;
     }
 
-    .banner_slogan_l2{
+    .banner_slogan_l2 {
         margin: 30px;
     }
 
-    .banner_botoes{
+    .banner_botoes {
         flex-direction: column;
         gap: 30px;
         margin-top: 30px;
     }
 
-    .banner_botoes a{
+    .banner_botoes a {
         align-self: center;
     }
 
     .span_dicas img,
     .para_devs img,
-    .clientes_conteudo img{
+    .clientes_conteudo img {
         display: none;
     }
 
     .clientes_texto,
-    .devs_texto{
+    .devs_texto {
         text-align: center;
     }
 
-    .para_devs{
+    .para_devs {
         padding: 0;
     }
 
@@ -346,32 +334,32 @@ li::marker {
     }
 
     /* SERVICOS */
-    .servicos_cards{
+    .servicos_cards {
         flex-direction: column;
         align-items: center;
     }
 
-    .card{
+    .card {
         width: 100%;
     }
 
-    .card2{
+    .card2 {
         margin-top: 100px;
     }
 
-    
+
 }
 
 @media screen and (max-width: 500px) {
     .banner_conteudo {
         font-size: 13px;
     }
-    
-    .span_cliente{
+
+    .span_cliente {
         font-size: 18px;
     }
 
-    h2{
+    #main_home h2 {
         font-size: 22px;
     }
 
@@ -386,13 +374,13 @@ li::marker {
     .botao {
         font-size: 16px;
     }
-    
-    .clientes_botao_cli{
-        padding: 12px 40px;   
+
+    .clientes_botao_cli {
+        padding: 12px 40px;
     }
-    
-    .clientes_botao_devs{
-        padding: 9px 40px;   
+
+    .clientes_botao_devs {
+        padding: 9px 40px;
     }
 
     .span_dicas_texto {
