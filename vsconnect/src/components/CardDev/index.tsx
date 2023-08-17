@@ -5,7 +5,7 @@ function CardDev(props: any) {
     return (
         <div className="dev">
             <div className="grupo_contato">
-                <img src={props.foto} alt="" />
+                <img src={"http://localhost:3000/static/" + props.foto} alt="" />
                 <div className="contato_dev">
                     <h3>{props.nome}</h3>
                     <p>{props.email}</p>

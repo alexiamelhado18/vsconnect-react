@@ -1,0 +1,8 @@
+1º - criar a pasta header dentro da components
+2º - criar os arquivos index.tsx e style.css dentro da pasta header
+3º - no arquivo index.tsx do componente header, criar a estrutura padrão
+4º - recortar o html do header para o arquivo tsx
+5º - ajustar o codigo copiado
+6º - recortar a função mostrar menu e colar no arquivo tsx
+7º - recortar o codigo css e colar no arquivo css do componente
+8º - importar o header no component main.tsx
