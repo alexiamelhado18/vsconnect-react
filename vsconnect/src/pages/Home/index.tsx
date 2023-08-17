@@ -37,7 +37,7 @@ function Home() {
                             <h2>para clientes</h2>
                             <ul>
                                 <li><Link to={""}>cadastrar serviços</Link></li>
-                                <li><Link to={""}>procurar por desenvolvedores</Link></li>
+                                <li><Link to={"lista/devs"}>procurar por desenvolvedores</Link></li>
                             </ul>
                             <div>
                                 <Link className="botao clientes_botao_cli" to="#">criar conta</Link>
@@ -51,7 +51,7 @@ function Home() {
                         <h2>para desenvolvedores</h2>
                         <ul>
                             <li>
-                                <Link to={"#"}>encontrar serviços</Link>
+                                <Link to={"lista/servicos"}>encontrar serviços</Link>
                             </li>
                             <li><Link to={"#"}>divulgar suas hardskills</Link></li>
                         </ul>
@@ -79,7 +79,7 @@ function Home() {
                             <p>Proposta: R$750,00</p>
                         </div>
                     </div>
-                    <Link to="#">Ver mais serviços</Link>
+                    <Link to={"lista/servicos"}>Ver mais serviços</Link>
                 </section>
             </main>
         </>
