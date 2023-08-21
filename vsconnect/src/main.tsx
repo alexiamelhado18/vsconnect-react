@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import Home from "./pages/Home/";
 import ListaServicos from "./pages/ListaServicos/";
 import ListaDevs from "./pages/ListaDevs";
+import Perfil from "./pages/PerfilUsuario";
 import Footer from "./components/Footer"
 import Header from './components/Header';
 
@@ -23,6 +24,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='lista/servicos' element={<ListaServicos />} />
 
         <Route path='lista/devs' element={<ListaDevs />} />
+        
+        {/* Rota com parametro, indicando o identificador do desenvolvedor */}
+        <Route path='perfil/:idUsuario' element={<Perfil />} />
       </Routes>
       <Footer />
     </BrowserRouter>
