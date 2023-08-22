@@ -2,7 +2,7 @@
 import "./style.css";
 
 function CardServico(props: any) {
-    return <div className="servico">
+    return <div className="card_servico">
         <div className="topo_servico">
             <h3>{props.titulo}</h3>
             <span>R$ {props.proposta}</span>

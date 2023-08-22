@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 function CardDev(props: any) {
     return (
-        <div className="dev">
+        <div className="card_dev">
             <div className="grupo_contato">
                 <img src={"http://localhost:3000/static/" + props.foto} alt="" />
                 <div className="contato_dev">
