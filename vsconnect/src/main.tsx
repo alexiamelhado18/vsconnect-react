@@ -7,6 +7,7 @@ import ListaServicos from "./pages/ListaServicos/";
 import ListaDevs from "./pages/ListaDevs";
 import Perfil from "./pages/PerfilUsuario";
 import VisualizarServico from "./pages/VisualizarServico";
+import CadastroUsuario from './pages/CadastroUsuario';
 import Footer from "./components/Footer"
 import Header from './components/Header';
 
@@ -25,10 +26,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='lista/servicos' element={<ListaServicos />} />
 
         <Route path='lista/devs' element={<ListaDevs />} />
-        
+
         {/* Rota com parametro, indicando o identificador do desenvolvedor */}
         <Route path='perfil/:idUsuario' element={<Perfil />} />
         <Route path='visualizar/servico/:idServico' element={<VisualizarServico />} />
+        <Route path='cadastro/usuario' element={<CadastroUsuario />} />
       </Routes>
       <Footer />
     </BrowserRouter>
