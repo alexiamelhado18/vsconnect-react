@@ -60,7 +60,7 @@ function CadastroUsuario() {
                 alert("Usuário cadastrado com sucesso!😊🤗");
             })
             .catch((error: any) => {
-                console.log(error);                
+                console.log(error);
                 alert("Falha ao cadastrar um novo usuário");
             })
 
@@ -200,6 +200,7 @@ function CadastroUsuario() {
                                     type="text"
                                     id="numero"
                                     placeholder="Digite o Nº:"
+                                    onChange={(e) => setNumero(e.target.value)}
                                     required
                                 />
                             </div>
@@ -262,8 +263,9 @@ function CadastroUsuario() {
                                                 name=""
                                                 id="cad_select_skill"
                                                 onChange={(e) => setSelect(e.target.value)}
+                                                defaultValue={select}
                                             >
-                                                <option selected disabled value="">Selecione</option>
+                                                <option disabled value="">Selecione</option>
                                                 {
                                                     techs.map((tech: any, index: number) => {
                                                         return <option key={index} value={tech}>{tech}</option>
