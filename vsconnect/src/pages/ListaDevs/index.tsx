@@ -45,8 +45,8 @@ function ListaDevs() {
 
         api.get("users")
             .then((response: any) => {
-                console.log(response);
-                setDevs(response.data)
+                // console.log(response);
+                setDevs(response.data);
             })
             .catch((error: any) => {
                 console.log("Error ao realizar um requisição:", error);
@@ -96,6 +96,7 @@ function ListaDevs() {
                                         </li>
                                     })
                                 }
+
                             </ul>
                         </div>
                     </div>
