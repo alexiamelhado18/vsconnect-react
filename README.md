@@ -5,6 +5,17 @@ Este projeto tem como objetivo de criar um sistema web integrado, que atua como 
 
 
 
+### Funcionalidades
+
+- Lista de todos os desenvolvedores 
+- Lista de todos os serviços
+- Filtro de Skill de Desenvolvedores
+- Filtro de Skill de Serviços
+- Cadastro de serviço
+- Cadastro de desenvolvedor
+- Cliente/Desenvolvedor realizar autenticação
+
+
 ## Preparação de ambiente
 
 Para executar este projeto, é necessário ter duas ferramentas em sua máquina.
@@ -16,7 +27,7 @@ Para executar este projeto, é necessário ter duas ferramentas em sua máquina.
 
 ## Instalação
 
-Para criar um projeto em React + TypeScript utilizando o vite, precisa executar os seguintes comandos:
+Para criar um projeto em [React](https://react.dev/learn) + [TypeScript](https://www.typescriptlang.org/docs/handbook/intro.html) utilizando o [Vite](https://vitejs.dev/guide/), precisa executar os seguintes comandos:
 
 > Cria o projeto:
 ```bash
@@ -34,3 +45,26 @@ Para criar um projeto em React + TypeScript utilizando o vite, precisa executar 
 ```bash
    npm run dev
 ```    
+
+
+## Pacotes
+
+O projeto necessita de pacotes importantes, como:
+
+- [Router](https://www.npmjs.com/package/react-router-dom) 
+- [React Secure Storage](https://www.npmjs.com/package/react-secure-storage)
+
+### Instalação dos pacotes
+
+> Entrar na pasta do projeto:
+```bash
+  cd nomedoprojeto
+```
+> Instalar o pacote Router:
+```bash
+  npm i react-router-dom
+```
+> Instalar o React Secure Storage:
+```bash
+  npm i react-secure-storage
+```
