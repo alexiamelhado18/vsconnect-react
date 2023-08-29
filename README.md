@@ -68,3 +68,45 @@ O projeto necessita de pacotes importantes, como:
 ```bash
   npm i react-secure-storage
 ```
+## Organização de pastas e arquivos
+
+A estrutura de pastas e arquivos foi organizada de forma clara e utilizada no mercado.
+
+Árvore de arquivos: 
+```
+vsconnect/
+  ├── node_modules/     (Pacotes/dependências do projeto)
+  ├── public/           (Arquivos públicos)
+  ├── src/              (Código-fonte) 
+  │   ├── assets/       (Recursos estáticos)
+  │   │   ├── images
+  │   ├── components/   (Componentes reutilizáveis)
+  │   │   ├── Header/
+  │   │   ├── Footer/
+  |   |   ├── CardDev/
+  │   │   └── CardServico/
+  |   ├── pages/
+  |   |   ├── CadastroServico/
+  |   |   ├── CadastroUsuario/
+  |   |   ├── Home/
+  |   |   ├── ListaDevs/
+  |   |   ├── ListaServicos/
+  |   |   ├── Login/
+  |   |   ├── PerfilUsuario/
+  |   |   ├── VisualizarServico/
+  |   ├── utils/         (Funções reutilizáveis)
+  |   |   ├── api.ts/
+  |   ├── index.css      (Estilização global)
+  |   ├── main.tsx       (Renderiza os componentes na página HTML)
+  │   └── vite-env.d.ts  (Define os tipos para variáveis de ambiente)
+  ├── .eslintrc.cjs      (Configuração do ESLint)
+  ├── .gitignore         (Arquivos/pastas a serem ignorados pelo Git)
+  ├── index.html         (HTML principal)
+  ├── package.json       (Informações do projeto e dependências)
+  ├── package-lock.json  (Versões específicas das dependências)
+  ├── README.md          (Documentação do projeto)
+  ├── tsconfig.json      (Informações do projeto e dependências)
+  ├── tsconfig.node.json (Versões específicas das dependências)
+  └── vite.config.ts     (Configuração do Vite)
+```
+
