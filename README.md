@@ -85,7 +85,7 @@ vsconnect/
   │   │   ├── Footer/
   |   |   ├── CardDev/
   │   │   └── CardServico/
-  |   ├── pages/
+  |   ├── pages/        (Componentes que representa páginas)
   |   |   ├── CadastroServico/
   |   |   ├── CadastroUsuario/
   |   |   ├── Home/
